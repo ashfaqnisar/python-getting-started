@@ -118,10 +118,137 @@ print(x, type(x))
 
 print("+" * 50)
 
-age = int(input("How old are you? "))
-if age >= 18 and age <= 65:
-    print("You can vote")
+# Random Numbers
+import random
 
-else:
-    # So the spacing  only matters, in the specific code block.
-    print("You cannot vote")
+print(random.randrange(1, 10))
+
+print("+" * 50)
+
+# Mutiline Strings
+print(""""Multiline String""")
+
+print("+" * 50)
+
+# Strings as array.
+string = "Hello"
+print(string[0])
+
+for i in string:
+    print(i)
+
+# Length of string
+print(string, "Length:", len(string))
+
+# In String
+# It is case sensitive
+print("Hello" in string)
+
+# Not in String
+print("World" not in string)
+
+# Slicing in String
+print(string[0:2])
+
+# Slice to end in String
+print(string[:4])
+
+# Slice from start in String
+print(string[4:])
+
+# upper and lower case
+print(string.upper())
+print(string.lower())
+
+# trim in string
+string1 = "   Strip   "
+print(string1.strip())
+
+
+# Replace in String
+string2 = "Hello World World"
+print(string2.replace("World", "Python"))
+
+# Split in String
+string3 = "Hello World World"
+print(string3.split(" "))
+
+# Format in string similar to template string
+print("I {1} {0}".format("python", "love"))
+
+# Escape characters
+print("Hello\nWorld")
+print("\"I Love Python\"")
+
+print("+" * 50)
+
+# Booleans
+print(("Booleans:").upper())
+print("Hello", bool("Hello"))
+print("\"\"", bool(""))
+print(0, bool(0))
+print({}, bool({}))
+print(None, bool(None))
+
+print("")
+# isInstance
+print("isInstance hello str", isinstance("Hello", str))
+print("isInstance 1 int", isinstance(1, int))
+
+print("+" * 50)
+
+# identity operators - is & is not
+print("Identity Operators:")
+print("id(x)", id(x))
+print("id(y)", id(y))
+print("id(x) == id(y)", id(x) == id(y))
+print("x is y", x is y)
+print("x is not y", x is not y)
+
+print("+" * 50)
+
+# membership operators
+print("Membership Operators:")
+y = ["apple", "banana"]
+x = "apple"
+
+print("x in y", x in y)
+print("x not in y", x not in y)
+
+print("+" * 50)
+
+# Lists in python.
+print("Lists: ")
+sampleList = ["sample", "list", "of", "values"]
+print(sampleList)
+
+# sortting the list
+x = sampleList
+x.sort()
+print(x)
+
+x = [1,12,2,9,85]
+x.sort()
+print(x)
+x.sort(reverse=True)
+print(x)
+
+x = ["1","12","2","9","85"]
+x.sort()
+print(x)
+
+# Negative indexing starts from -1
+print("negative indexing", x[-1])
+
+# Range in lists
+print("Range in lists", x[-5:])
+
+
+print("+" * 50)
+# age = int(input("How old are you? "))
+# if age >= 18 and age <= 65:
+#     print("You can vote")
+
+# else:
+#     # So the spacing  only matters, in the specific code block.
+#     print("You cannot vote")
