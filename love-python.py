@@ -14,6 +14,8 @@ print(x)
 x = float(x)
 print(x)
 print(type(x))
+testList = ["test"]
+print(type(testList))
 
 print("+" * 50)
 
@@ -78,6 +80,41 @@ def updateSample():
 updateSample()
 
 print(sample)
+
+print("+" * 50)
+
+# Datatypes:
+# Numbers
+# Integers
+x = 10; y =-1
+print(x, type(x))
+# Floats
+x = 10.51
+print(x, type(x))
+# Complex
+x = 1 + 2j
+print(x, type(x))
+# Strings
+x = "Hello"
+print(x, type(x))
+# Lists
+x = ["Hello", "World"]
+print(x, type(x))
+# Tuples
+x = ("Hello", "World")
+print(x, type(x))
+# Dictionaries
+x = {"key": "value"}
+print(x, type(x))
+# Sets
+x = {"Hello", "World"}
+print(x, type(x))
+# Booleans
+x = True
+print(x, type(x))
+# None
+x = None
+print(x, type(x))
 
 print("+" * 50)
 
